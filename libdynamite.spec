@@ -10,7 +10,9 @@ License:	MIT
 Group:		System/Libraries
 Source0:	http://downloads.sourceforge.net/synce/%{name}-%{version}.tar.gz
 URL:		http://synce.sourceforge.net/
+BuildRequires:	gettext-devel
 Buildroot:	%{_tmppath}/%{name}-%{version}-root
+Obsoletes:	dynamite < %{version}-%{release}
 
 %description
 Dynamite is a tool and library for decompressing data compressed
@@ -72,4 +74,3 @@ rm -rf %{buildroot}
 %{_libdir}/%{name}.*a
 %{_includedir}/%{name}.h
 %{_libdir}/pkgconfig/*.pc
-
