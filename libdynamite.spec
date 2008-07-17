@@ -5,21 +5,27 @@
 Name:		libdynamite
 Summary:	SynCE: PKWARE decompressor
 Version:	0.1.1
-Release:	%{mkrel 2}
+Release:	%{mkrel 3}
 License:	MIT
 Group:		System/Libraries
 Source0:	http://downloads.sourceforge.net/synce/%{name}-%{version}.tar.gz
 URL:		http://synce.sourceforge.net/
 BuildRequires:	gettext-devel
 Buildroot:	%{_tmppath}/%{name}-%{version}-root
-Obsoletes:	dynamite < %{version}-%{release}
-Provides:	dynamite = %{version}-%{release}
 
 %description
 Dynamite is a tool and library for decompressing data compressed
 with the PKWARE Data Compression Library.
 
-%package -n	%{libname}
+%package -n dynamite
+Group:		Archiving/Other
+Summary:	SynCE: PKWARE decompressor
+
+%description -n dynamite
+Dynamite is a tool for decompressing data compressed with the PKWARE
+Data Compression Library.
+
+%package -n %{libname}
 Group:		System/Libraries
 Summary:	SynCE: PKWARE decompressor
 
@@ -60,7 +66,7 @@ rm -rf %{buildroot}
 %clean
 rm -rf %{buildroot}
 
-%files
+%files -n dynamite
 %defattr(-,root,root)
 %doc LICENSE
 %{_bindir}/*
