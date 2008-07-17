@@ -5,7 +5,7 @@
 Name:		libdynamite
 Summary:	SynCE: PKWARE decompressor
 Version:	0.1.1
-Release:	%{mkrel 1}
+Release:	%{mkrel 2}
 License:	MIT
 Group:		System/Libraries
 Source0:	http://downloads.sourceforge.net/synce/%{name}-%{version}.tar.gz
@@ -32,6 +32,8 @@ Group:		Development/C
 Summary:	SynCE: PKWARE decompressor
 Provides:	%{name}-devel = %{version}-%{release}
 Requires:	%{libname} = %{version}-%{release}
+Obsoletes:	dynamite-devel < %{version}-%{release}
+Obsoletes:	%{mklibname dynamite 0 -d} < %{version}-%{release}
 
 %description -n %{develname}
 Libdynamite is part of the SynCE project. This package contains development
