@@ -13,6 +13,7 @@ URL:		http://synce.sourceforge.net/
 BuildRequires:	gettext-devel
 Buildroot:	%{_tmppath}/%{name}-%{version}-root
 Obsoletes:	dynamite < %{version}-%{release}
+Provides:	dynamite = %{version}-%{release}
 
 %description
 Dynamite is a tool and library for decompressing data compressed
