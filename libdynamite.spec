@@ -83,3 +83,27 @@ rm -rf %{buildroot}
 %{_libdir}/%{name}.*a
 %{_includedir}/%{name}.h
 %{_libdir}/pkgconfig/*.pc
+
+
+%changelog
+* Fri Sep 04 2009 Thierry Vignaud <tv@mandriva.org> 0.1.1-4mdv2010.0
++ Revision: 429725
+- rebuild
+
+* Thu Jul 17 2008 Adam Williamson <awilliamson@mandriva.org> 0.1.1-3mdv2009.0
++ Revision: 237761
+- since the binary's still called dynamite, let's have the package called
+  dynamite not libdynamite
+
+* Thu Jul 17 2008 Adam Williamson <awilliamson@mandriva.org> 0.1.1-2mdv2009.0
++ Revision: 237750
+- add back the devel package obsoletes
+- provides dynamite
+- obsolete old name (dynamite)
+- br gettext-devel (as old package)
+
+* Thu Jul 17 2008 Adam Williamson <awilliamson@mandriva.org> 0.1.1-1mdv2009.0
++ Revision: 237714
+- import libdynamite
+
+
