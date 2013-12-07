@@ -5,7 +5,7 @@
 Summary:	SynCE: PKWARE decompressor
 Name:		libdynamite
 Version:	0.1.1
-Release:	6
+Release:	7
 License:	MIT
 Group:		System/Libraries
 Url:		http://synce.sourceforge.net/
