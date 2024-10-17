@@ -8,7 +8,7 @@ Version:	0.1.1
 Release:	15
 License:	MIT
 Group:		System/Libraries
-Url:		http://synce.sourceforge.net/
+Url:		https://synce.sourceforge.net/
 Source0:	http://downloads.sourceforge.net/synce/%{name}-%{version}.tar.gz
 BuildRequires:	gettext-devel
 
